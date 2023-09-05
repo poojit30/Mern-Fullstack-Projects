@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            width: fit-content;
+            margin: auto;
+            background-color: rgb(247, 243, 243);
+        }
+        .container p {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+        .container label {
+            flex: 1;
+            padding-right: 10px;
+        }
+        .container input, .container select {
+            flex: 2;
+        }
+        .container button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="color: blue;">Registration Form</h2>
+        <form>
+            <p>
+                <label for="full_name">Full Name:</label>
+                <input type="text" id="full_name" name="full_name">
+            </p>
+            <p>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </p>
+            <p>
+                <label for="re_password">Re Password:</label>
+                <input type="password" id="re_password" name="re_password">
+            </p>
+            <p>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+            </p>
+            <p>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+            </p>
+            <p>
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="trans">Trans</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Save</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
