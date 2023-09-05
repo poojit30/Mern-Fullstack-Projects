@@ -1,0 +1,27 @@
+#bg {
+    background-color: rgb(133, 15, 52);
+    border: 2px solid rgb(108, 3, 21);
+    padding: 40px;
+}
+#form {
+    background-color: rgb(89, 12, 39);
+    padding: 40px;
+}
+#table {
+    width: 700px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+input,
+select {
+    color: #5a5854;
+    background-color: #f2f2f2;
+    padding: 4px 4px 4px 2px;
+    margin-bottom: 1px;
+}
+button{
+    padding: 10px 40px;
+    border-radius: 5px;
+}

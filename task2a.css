@@ -1,0 +1,30 @@
+body, ul {
+    margin: 10px;
+    padding: 5px;
+}
+nav {
+    background-color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    justify-content: space-around; 
+    padding: 10px 0; 
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none; 
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+    color: #ff6600;
+}

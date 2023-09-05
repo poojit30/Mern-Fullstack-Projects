@@ -1,0 +1,121 @@
+<html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8" />
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1.0"
+            />
+            <title>Home</title>
+            <link rel="stylesheet" href="task7.css" />
+        </head>
+        <body>
+            <div id="bg">
+                <center></center>
+                <br />
+                <div id="form">
+                    <form method="get" action="submit.html">
+                        <table id="table">
+                            <tr>
+                                <td>Name:</td>
+                                <td>
+                                    <input
+                                        type="text"
+                                        name="username"
+                                        size="30"
+                                        maxlength="30"
+                                        placeholder="Name"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Email:</td>
+                                <td>
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        name="email"
+                                        size="30"
+                                        maxlength="100"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Phone Number:</td>
+                                <td>
+                                    <input
+                                        type="tel"
+                                        name="number"
+                                        size="30"
+                                        maxlength="12"
+                                        placeholder="Enter Mobile no"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Gender:</td>
+                                <td>
+                                    <input
+                                        id="female"
+                                        type="radio"
+                                        name="gender"
+                                        value="f"
+                                    />
+                                    <label for="female">Female</label>
+                                    <input
+                                        id="male"
+                                        type="radio"
+                                        name="gender"
+                                        value="m"
+                                    />
+                                    <label for="male">Male</label>
+                                    <input
+                                        id="other"
+                                        type="radio"
+                                        name="gender"
+                                        value="k"
+                                    />
+                                    <label for="other">other</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>About:</td>
+                                <td>
+                                    <textarea rows="4" cols="40" id="comments">
+                                    </textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Zip Code:</td>
+                                <td>
+                                    <input
+                                        type="text"
+                                        name="pin"
+                                        size="30"
+                                        maxlength="30"
+                                        placeholder="Enter pin code"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Language:</td>
+                                <td>
+                                    <select name="language">
+                                        <option value="english">English</option>
+                                        <option value="spanish">Spanish</option>
+                                        <option value="french">French</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="center">
+                                    <button type="submit">Register</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </body>
+    </html>
+</html>

@@ -1,0 +1,31 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: lightblue; 
+    width: 200px;
+}
+
+nav ul {
+    list-style: none; 
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block; 
+    text-decoration: none; 
+    color: blue; 
+    padding: 10px; 
+    font-weight: bold; 
+}
+
+nav a:hover {
+    background-color: orange; 
+    color: white;
+}
