@@ -1,161 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            border: 1px solid #ccc;
-        }
-        
         table {
-            font-family: Arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
+            width: 700px;
         }
-        
-        th, td {
-            padding: 8px;
-            border: 1px solid #ccc;
-        }
-        
+
         th {
-            text-align: left;
+            width: 140px;
+            border: 1px solid #000;
         }
-        
-        label {
-            display: block;
-            margin-top: 10px;
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
         }
-        
-        .login-link {
-            text-align: right;
-            margin-bottom: 10px;
+
+        .g {
+            width: fit-content;
         }
-        
-        .checkbox-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        
-        #declaration {
-            margin-top: 5px;
+
+        .f {
+            height: 650px;
+            box-sizing: border-box;
         }
     </style>
 </head>
+
 <body>
-    <div class="container">
-        <h1 style="color: blue; text-align:center;">Registration Form</h1>
-        <form action="https://www.ethnus.com" method="pos00t">
-            <table>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <center>
+        <h1 style="color: blue">Registration form</h1>
+        <table border="1" cellspacing="0" cellpadding="0">
+            <tbody>
                 <tr>
-                    <th><label for="firstname">First Name:</label></th>
-                    <td><input type="text" id="firstname" name="firstname" required></td>
+                    <th>First Name</th>
+                    <td><input type="text" name="fn" /></td>
                 </tr>
+
                 <tr>
-                    <th><label for="lastname">Last Name:</label></th>
-                    <td><input type="text" id="lastname" name="lastname" required></td>
+                    <th>Last Name</th>
+                    <td><input type="text" name="ln" /></td>
                 </tr>
+
                 <tr>
-                    <th><label for="email">Email:</label></th>
-                    <td><input type="email" id="email" name="email" required></td>
+                    <th>Email</th>
+                    <td><input type="email" name="email" /></td>
                 </tr>
+
                 <tr>
-                    <th><label for="password">Password:</label></th>
-                    <td><input type="password" id="password" name="password" required></td>
+                    <th>Password</th>
+                    <td><input type="password" name="pass" /></td>
                 </tr>
+
                 <tr>
-                    <th><label for="confirm-password">Re-enter Password:</label></th>
-                    <td><input type="password" id="confirm-password" name="confirm-password" required></td>
+                    <th>Re-enter Password</th>
+                    <td><input type="password" name="repass" /></td>
                 </tr>
+
                 <tr>
-                    <th><label for="gender">Gender:</label></th>
-                    <td class="radio-group">
-                        <label for="male">
-                            <input type="radio" id="male" name="gender" value="male">
-                            Male
-                        </label>
-                        <label for="female">
-                            <input type="radio" id="female" name="gender" value="female">
-                            Female
-                        </label>
+                    <th>Gender</th>
+                    <td>
+                        <input style="margin: 0px" class="g" type="radio" id="male" name="gender" value="Male" /><label
+                            for="male">Male</label>
+                        <hr />
+                        <input class="g" style="margin: 0px" type="radio" id="female" name="gender"
+                            value="Female" /><label style="margin-left: 0px" for="female">Female</label>
                     </td>
                 </tr>
+
                 <tr>
-                    <th><label for="age">Age:</label></th>
-                    <td><input type="number" id="age" name="age" required></td>
+                    <th>Phone Number</th>
+                    <td><input type="number" name="phn" /></td>
                 </tr>
-                <tr>
-                    <th><label for="phone">Phone Number:</label></th>
-                    <td><input type="tel" id="phone" name="phone" required></td>
+
+                <tr height="100">
+                    <th>Address</th>
+                    <td><textarea name="address" rows="6" cols="73"></textarea></td>
                 </tr>
+
                 <tr>
-                    <th><label for="address">Address:</label></th>
-                    <td><textarea id="address" name="address" rows="4" required></textarea></td>
+                    <th>State</th>
+                    <td><input type="text" name="State" /></td>
                 </tr>
+
                 <tr>
-                    <th><label for="state">State:</label></th>
+                    <th><label for="country">Country</label></th>
                     <td>
-                        <select id="state" name="state" required>
-                            <option value="">Select State</option>
-                            <option value="state1">State 1</option>
-                            <option value="state2">State 2</option>
-                            <option value="state3">State 3</option>
+                        <select id="country" name="Country">
+                            <option value="choose">Choose your country</option>
+                            <option value="India">India</option>
+                            <option value="us">us</option>
                         </select>
                     </td>
                 </tr>
+
                 <tr>
-                    <th><label for="country">Country:</label></th>
+                    <th><label for="lang">Languages known</label></th>
                     <td>
-                        <select id="country" name="country" required>
-                            <option value="">Select Country</option>
-                            <option value="country1">Country 1</option>
-                            <option value="country2">Country 2</option>
-                            <option value="country3">Country 3</option>
-                        </select>
+                        <input id="lang" class="g" type="checkbox" name="Language" />English
+                        <input id="lang" class="g" type="checkbox" name="Language" />Kannada
+                        <input id="lang" class="g" type="checkbox" name="Language" />Hindi
+                        <input id="lang" class="g" type="checkbox" name="Language" />Telugu
                     </td>
                 </tr>
+
                 <tr>
-                    <th><label for="languages">Languages Known:</label></th>
-                    <td class="checkbox-group">
-                        <label for="english">
-                            <input type="checkbox" id="english" name="languages[]" value="english">
-                            English
-                        </label>
-                        <label for="kannada">
-                            <input type="checkbox" id="kannada" name="languages[]" value="kannada">
-                            Kannada
-                        </label>
-                        <label for="hindi">
-                            <input type="checkbox" id="hindi" name="languages[]" value="hindi">
-                            Hindi
-                        </label>
-                        <label for="telugu">
-                            <input type="checkbox" id="telugu" name="languages[]" value="telugu">
-                            Telugu
-                        </label>
+                    <td colspan="2">
+                        <input class="g" type="checkbox" name="ack" />Hereby I declare all
+                        the given details are true
                     </td>
                 </tr>
+
                 <tr>
-                    <th></th>
-                    <td>
-                        <input type="checkbox" id="declaration" required>
-                        <label for="declaration">I hereby declare that all the given details are true.</label>
+                    <td style="text-align: right" colspan="2" class="g" type="text" name="web">
+                        Login in to <a href="https://www.ethnus.com/">Ethnus</a> website
                     </td>
                 </tr>
-                <tr>
-                    <th></th>
-                    <td><input type="submit" value="Register"></td>
-                </tr>
-            </table>
-        </form>
-        <div class="login-link">
-            <a href="https://www.ethnus.com">Log in to Ethnus</a>
-        </div>
-    </div>
+            </tbody>
+        </table>
+        <br />
+        <input style="width: 70px; padding: 0px" type="button" value="Register" />
+    </center>
 </body>
+
 </html>
